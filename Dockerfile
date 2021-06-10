@@ -19,7 +19,6 @@ ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openj
 RUN set -x \
 	&& apk add --no-cache \
 		openjdk8 \
-		git \
 		python2 \
-		build-base \
+		alpine-sdk \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
