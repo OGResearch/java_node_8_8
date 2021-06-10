@@ -23,5 +23,5 @@ RUN set -x \
 		alpine-sdk \
 		autoconf \
 		nasm \
-		zlib \
+		libc6-compat \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
