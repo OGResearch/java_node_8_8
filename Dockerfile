@@ -24,4 +24,5 @@ RUN set -x \
 		autoconf \
 		nasm \
 		libc6-compat \
+		libtool \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
