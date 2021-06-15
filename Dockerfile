@@ -26,5 +26,6 @@ RUN set -x \
 		libc6-compat \
 		libtool \
 		automake \
+		bash \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower
