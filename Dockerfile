@@ -29,3 +29,5 @@ RUN set -x \
 		bash \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower
+
+RUN bash -c 'sed -i 's/\/bin\/ash/\/bin\/bash/' /etc/passwd'
