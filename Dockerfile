@@ -15,6 +15,7 @@ RUN { \
 	&& chmod +x /usr/local/bin/docker-java-home
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+ENV NODE_TLS_REJECT_UNAUTHORIZED 0
 
 RUN set -x \
 	&& apk add --no-cache \
