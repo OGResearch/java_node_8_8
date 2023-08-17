@@ -31,6 +31,6 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower \
 	&& yarn global add bower \
-        && echo '{ "allow_root": true }' > /root/.bowerrc
+        && echo '{ "allow_root": true, "strict-ssl": false, "https-proxy": "" }' > /root/.bowerrc
 
 RUN bash -c "sed -i 's/\/bin\/ash/\/bin\/bash/' /etc/passwd"
